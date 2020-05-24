@@ -1,10 +1,12 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://object/space/space.gd" type="Script" id=1]
-[ext_resource path="res://object/GUI2D/Box2D/Box2D.tscn" type="PackedScene" id=2]
 
 [node name="Space" type="Node2D"]
 script = ExtResource( 1 )
+size = Vector2( 50, 50 )
+margin = Vector2( 10, 10 )
+padding = Vector2( 10, 10 )
 
 [node name="Title" type="Label" parent="."]
 margin_right = 44.0
@@ -13,5 +15,3 @@ text = "title"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Box2D" parent="." instance=ExtResource( 2 )]

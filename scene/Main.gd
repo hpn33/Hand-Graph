@@ -87,6 +87,7 @@ func add_space(title):
 	spaces.append(space)
 	
 	space.init(title, Vector2(400, 400))
+	space.position = Vector2.ONE * 10
 	
 	return space
 
