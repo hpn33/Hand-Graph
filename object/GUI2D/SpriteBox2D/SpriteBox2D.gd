@@ -3,6 +3,9 @@ extends Box2D
 class_name SpriteBox
 
 
+export(StreamTexture) var stream_texture setget set_texture
+
+
 onready var sprite :Sprite= $Sprite setget , get_sprite
 func get_sprite() -> Sprite:
 	if sprite == null:
@@ -30,7 +33,17 @@ func set_centered(_centered):
 
 
 func set_texture(texture):
-	get_sprite().texture = texture
+	
+	stream_texture = texture
+	
+	var image = Image.new()
+	image.load(stream_texture.resource_path)
+
+	var image_texture = ImageTexture.new()
+	image_texture.create_from_image(image)
+	
+	get_sprite().texture = image_texture
+	
 	
 
 

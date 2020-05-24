@@ -1,5 +1,5 @@
 tool
-extends Box2D
+extends Group2D
 class_name VBox2D
 
 
@@ -30,12 +30,6 @@ func get_x_position() -> float:
 	return 0.0
 
 
-func remove_children():
-	
-	for child in get_children():
-		remove_child(child)
-
-
 func sort_children():
 	var y = 0
 	for child in get_children():
@@ -62,8 +56,6 @@ func sort_from(index: int, diff: float):
 	resize()
 
 
-
-
 func resize():
 	
 	var y = 0
@@ -82,15 +74,9 @@ func resize():
 	repivot()
 
 
-
 func reset():
 	remove_children()
 	resize()
 
 
-func first():
-	return get_child(0)
 
-
-func last():
-	return get_child(get_child_count()-1)

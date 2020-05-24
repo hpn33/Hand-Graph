@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://object/GUI2D/HBox2D/HBox2D.gd" type="Script" id=1]
+
+[node name="HBox2D" type="Node2D"]
+position = Vector2( 88, 63 )
+script = ExtResource( 1 )

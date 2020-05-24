@@ -8,9 +8,38 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Box2D",
+"language": "GDScript",
+"path": "res://object/GUI2D/Box2D/Box2D.gd"
+}, {
+"base": "Box2D",
+"class": "Group2D",
+"language": "GDScript",
+"path": "res://object/GUI2D/Group/Group.gd"
+}, {
+"base": "Group2D",
+"class": "HBox2D",
+"language": "GDScript",
+"path": "res://object/GUI2D/HBox2D/HBox2D.gd"
+}, {
+"base": "Box2D",
+"class": "SpriteBox",
+"language": "GDScript",
+"path": "res://object/GUI2D/SpriteBox2D/SpriteBox2D.gd"
+}, {
+"base": "Group2D",
+"class": "VBox2D",
+"language": "GDScript",
+"path": "res://object/GUI2D/VBox2D/VBox2D.gd"
+} ]
 _global_script_class_icons={
-
+"Box2D": "",
+"Group2D": "",
+"HBox2D": "",
+"SpriteBox": "",
+"VBox2D": ""
 }
 
 [application]
